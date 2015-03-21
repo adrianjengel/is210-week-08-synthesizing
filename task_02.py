@@ -23,7 +23,19 @@ def login(username, maxattempts=1):
         number of failed attempts.
 
     Examples:
+        Two failed attempts before successful attempt:
+        >>> login('mike', 5)
+        Please enter your password:
+        Incorrect username or password. You have 4 attempts left.
+        Please enter your password:
+        Incorrect username or password. You have 3 attempts left.
+        Please enter your password:
+        True
 
+        Success on first attempt:
+        >>> login('augustus')
+        Please enter your password:
+        True
 
 
     """
